@@ -10826,3 +10826,17 @@ textarea.form-control-lg {
     background-position: center;
     padding: 5rem 0;
 }
+
+.header-bg-uppa {
+    background-image: url('/images/uppa.png');
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+}
+
+.header-bg-hex {
+    background-image: url('/images/gouv.png');
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+}
