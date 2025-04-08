@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+<head> 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Merch-Unity</title>
   <script src="https://cdn.tailwindcss.com"></script> <!-- FrameWork Tailwind -->
-  <link rel="icon" href="../images/Image2-modified.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-
 </head>
 
 
-<body class="">
-<link rel="stylesheet" href="../css_pages/style_index.css">
-
-<!-- NAVBAR Section -->
+<body class="font-sans text-sm">
   <!-- Top Bar -->
   <div class="w-full border-b text-gray-600 text-xs">
     <div class="max-w-7xl mx-auto px-4 flex justify-between py-2">
@@ -40,15 +34,16 @@
 
       <!-- Logo -->
       <div class="flex items-center space-x-2">
-        <img src="../images/Image2-modified.png" class= "w-9 h-9 text-red-500">
+        <img src="/nav_bar_tests/Image2-modified.png" class= "w-9 h-9 text-red-500">
         <span class="text-2xl font-bold text-gray-800">Merch <span class="font-light">Unity</span></span>
       </div>
 
       <!-- Nav Links -->
       <ul class="flex space-x-8 font-semibold text-gray-800">
-        <li><a href="uppa.html" class="hover:text-[#bebab4]">UPPA</a></li>
-        <li><a href="hexagone.html" class="hover:text-[#bebab4]">Hexagone</a></li>
-        <li><a href="lidl.html" class="hover:text-[#bebab4]">Lidl</a></li>
+        <li><a href="/pages/index.html" class="hover:text-[#bebab4]">Accueil</a></li>
+        <li><a href="/pages/UPPA.html" class="hover:text-[#bebab4]">UPPA</a></li>
+        <li><a href="/pages/Hexagone.html" class="hover:text-[#bebab4]">Hexagone</a></li>
+        <li><a href="/pages/Lidl.html" class="hover:text-[#bebab4]">Lidl</a></li>
         <li class="relative">
         </li>
       </ul>
@@ -66,78 +61,53 @@
       </div>
     </div>
   </nav>
-<br><br>
-  <div class="container">
-    <img src="../images/back1.jpeg" class="img1">
-  </div>
 
-  <!--Bienvenue-->
-  <div class="back-txt">
-    Bienvenue chez Merch-Unity !
-  </div>
-  <br>
-  <div class="container">
-    <div class="titre">
-      Les nouveautés 🎁
-    </div>
-  </div>
-  <br>
+</body>
+</html>
+<!-- about.php -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>À propos - LIDL Shop</title>
+    <link rel="stylesheet" href="style.css"> <!-- si tu as une feuille de style -->
+</head>
+<body>
+    <header class="header-bg">
+        <div class="container text-center text-white">
+            <h1 class="display-4 fw-bolder">À propos</h1>
+        </div>
+    </header>
 
-<!--Déroulant des nouveautés-->
-<div class="wrapper">
+    <main class="container my-5">
+        <section>
+            <h2>Un projet universitaire fictif</h2>
+            <p>
+                Ce site de vente en ligne a été réalisé dans le cadre d’un projet universitaire à l’IUT des Pays de l’Adour,
+                département Réseaux & Télécoms (BUT1), pour le module R209 - Développement Web.
+            </p>
+            <p>
+                Le site est entièrement fictif : aucun des produits, marques ou services présentés n’est réel. Il ne s’agit pas d’un véritable site e-commerce.
+            </p>
+        </section>
 
+        <section class="mt-4">
+            <h2>Aucune affiliation</h2>
+            <p>
+                Ce site n’est en aucun cas affilié à LIDL, l'UPPA, le gouvernement ni à aucune autre marque mentionnée. Toute ressemblance avec des noms ou visuels existants est purement pédagogique.
+            </p>
+        </section>
 
-  <!-- Produit 1-->
-  <div class="product-card">
-    <div class="product-img-container">
-      <div class="product-img"></div>
-    </div>
-    <div class="product-info">
-      <h2 class="product-title">Nike Shoes</h2>
-      <p class="product-description">High-quality Nike shoes for your active lifestyle.</p>
-      <p class="product-price">$129.99</p>
-      <div class="icon-container">
-        <i class="fas fa-heart"></i>
-        <i class="fas fa-shopping-cart cart-icon"></i>
-      </div>
-    </div>
-  </div>
+        <section class="mt-4">
+            <h2>Projet réalisé par</h2>
+            <p>
+                [Vos prénoms + noms], étudiants en BUT1 Réseaux & Télécoms - Année 2024/2025.
+            </p>
+        </section>
+    </main>
 
-
-  <!-- Produit 2-->
-  <div class="product-card">
-    <div class="product-img-container">
-      <div class="product-img"></div>
-    </div>
-    <div class="product-info">
-      <h2 class="product-title">Nike Shoes</h2>
-      <p class="product-description">High-quality Nike shoes for your active lifestyle.</p>
-      <p class="product-price">$129.99</p>
-      <div class="icon-container">
-        <i class="fas fa-heart"></i>
-        <i class="fas fa-shopping-cart cart-icon"></i>
-      </div>
-    </div>
-  </div>
-
-  <!-- Produit 3-->
-  <div class="product-card">
-    <div class="product-img-container">
-      <div class="product-img"></div>
-    </div>
-    <div class="product-info">
-      <h2 class="product-title">Nike Shoes</h2>
-      <p class="product-description">High-quality Nike shoes for your active lifestyle.</p>
-      <p class="product-price">$129.99</p>
-      <div class="icon-container">
-        <i class="fas fa-heart"></i>
-        <i class="fas fa-shopping-cart cart-icon"></i>
-      </div>
-    </div>
-  </div>
-
-</div>  
-<br>
-
-  </body>
+    <footer class="text-center mt-5 mb-3 text-muted">
+        <small>© 2025 - Projet universitaire fictif</small>
+    </footer>
+</body>
 </html>
