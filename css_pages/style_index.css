@@ -1,0 +1,108 @@
+.img1 {
+    width: 100%;        /* Prend toute la largeur disponible */
+    height: 300px;       /* Garder les proportions de l'image */
+
+    
+}
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;  /* Prend toute la largeur disponible */
+    height: 90%;  /* Prend 90% de la hauteur de la fenêtre ou du parent */
+}
+
+.back-txt {
+    position: absolute; /* Position absolue pour placer le texte sur l'image */
+    top: 38%; /* Centrer verticalement */
+    left: 37%; /* Centrer horizontalement */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.titre {
+    font-size: 25px;
+}
+
+/* Nouveautés */
+
+.product-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .product-img-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .product-img {
+    width: 100%;
+    height: 280px;
+    background-image: url('https://www.paramountshop.com/cdn/shop/files/spongebob-squarepants-life-sized-cardboard-cutout-standee-946804_1445x.jpg?v=1718292085');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .product-info {
+    padding: 20px;
+  }
+  
+  .product-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .product-price {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .icon-container i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .fa-heart {
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    transition: all 0.4s ease;
+  }
+  
+  .fa-heart.full {
+    color: #000;
+  }
+  
+  .cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+
+  .wrapper {
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center;     /* Centrage vertical si hauteur définie */
+    gap: 40px;               /* Espace entre les éléments */
+    
+  }
