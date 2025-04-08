@@ -1,4 +1,8 @@
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
 .img1 {
     width: 100%;        /* Prend toute la largeur disponible */
@@ -6,13 +10,7 @@
 
     
 }
-.container {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 100%;  /* Prend toute la largeur disponible */
-    height: 90%;  /* Prend 90% de la hauteur de la fenêtre ou du parent */
-}
+
 
 .back-txt {
     position: absolute; /* Position absolue pour placer le texte sur l'image */
