@@ -10840,3 +10840,10 @@ textarea.form-control-lg {
     background-position: center;
     padding: 5rem 0;
 }
+
+.header-bg-crea {
+  background-image: url('/images/crea.png');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+}
