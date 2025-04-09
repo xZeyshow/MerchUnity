@@ -106,3 +106,8 @@ html, body {
     gap: 40px;               /* Espace entre les éléments */
     
   }
+
+  .iut-img {
+    height: 60%;
+    width: 50%;
+  }
