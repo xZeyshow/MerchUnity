@@ -46,7 +46,7 @@
         <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
     
           <!-- Logo -->
-           <button onclick="window.location.href='index.html';">
+           <button onclick="window.location.href='index.php';">
             <div class="flex items-center space-x-2">
               <img src="../images/index_page/Image2-modified.png" class= "w-9 h-9 text-red-500">
               <span class="text-2xl font-bold text-gray-800">Merch <span class="font-light">Unity</span></span>
