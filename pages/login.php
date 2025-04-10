@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -57,7 +59,6 @@
             <li><a href="uppa.html" class="hover:text-[#bebab4]">UPPA</a></li>
             <li><a href="hexagone.html" class="hover:text-[#bebab4]">Hexagone</a></li>
             <li><a href="lidl.html" class="hover:text-[#bebab4]">Lidl</a></li>
-           
             <li class="relative">
             </li>
           </ul>
@@ -86,9 +87,26 @@
           <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
 
 
-            <form action="./reg_traitement.php" method="POST">
+            <!-- Messages d'erreur -->
+             <?php
+             if (isset($_GET['param1'])) {
+              if ($_GET['param1'] == "ok") {
+                echo '
+                <div class="success-msg">
+                <i class="fa fa-check"></i>
+                Votre compte a bien été crée ! Veuillez vous connecter.
+                </div>
+                ';
+                
+              }
+             }
+
+
+
+              ?>
+            <form action="./login_traitement.php" method="POST">
               <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-                <p class="lead fw-normal mb-0 me-3">S'inscrire avec</p>
+                <p class="lead fw-normal mb-0 me-3">Se connecter avec</p>
                 <button type="button" class="btn btn-primary btn-floating mx-1">
                   <i class="fab fa-facebook-f"></i>
                 </button>
@@ -106,50 +124,34 @@
                 <p class="text-center fw-bold mx-3 mb-0">Ou</p>
               </div>
     
-              
-              <div class="form-outline mb-2">
-                <input type="text" name="name" id="form3Example3" class="form-control form-control-lg" required minlength="3" maxlength="15">
-                <label class="form-label" for="form3Example3" >Nom</label>
-              </div>
-              <div class="form-outline mb-2">
-                <input type="text" id="form3Example3" name="username" class="form-control form-control-lg" required minlength="3" maxlength="10">
-                <label class="form-label" for="form3Example3">Prénom</label>
-              </div>
-              <div class="form-outline mb-2">
-                <input type="email" id="form3Example3" class="form-control form-control-lg" required minlength="3" maxlength="15">
+              <div class="form-outline mb-4">
+                <input type="email" name="email" id="form3Example3" class="form-control form-control-lg">
                 <label class="form-label" for="form3Example3">Adresse Mail</label>
               </div>
     
-              
-              <div class="form-outline mb-2">
-                <input type="password" id="form3Example4" name="password" class="form-control form-control-lg" required minlength="5" maxlength="15">
+              <div class="form-outline mb-3">
+                <input type="password" name="password" id="form3Example4" class="form-control form-control-lg">
                 <label class="form-label" for="form3Example4">Mot de passe</label>
-              </div>
-              <div class="form-outline mb-2">
-                <input type="password" id="form3Example4" name="re_password"class="form-control form-control-lg" required minlength="5" maxlength="15">
-                <label class="form-label" for="form3Example4">Confirmer le mot de passe</label>
               </div>
     
               <div class="d-flex justify-content-between align-items-center">
                 
-                <!--
                 <div class="form-check mb-0">
                   <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3">
                   <label class="form-check-label" for="form2Example3">
                     Se rapeller
                   </label>
                 </div>
-                -->
-                
                 <a href="#!" class="text-body" style="text-decoration: underline;">Mot de passe oublié?</a>
               </div>
     
-              <div class="text-center text-lg-start mt-4 pt-0">
-                <button type="submit" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">S'inscrire</button>
-                <p class="small fw-bold mt-2 pt-1 mb-0">Vous avez déja un compte? <a href="login.html" class="link-danger">Se connecter</a></p>
+              <div class="text-center text-lg-start mt-4 pt-2">
+                <button type="submit" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">Se connecter</button>
+                <p class="small fw-bold mt-2 pt-1 mb-0">Vous n'avez pas de compte? <a href="register.php" class="link-danger">Créer un compte</a></p>
               </div>
-    
             </form>
+
+
           </div>
         </div>
       </div>

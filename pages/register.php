@@ -86,6 +86,64 @@
           <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
 
 
+            <!--Messages erreur -->
+            <?php
+            if (isset($_GET['param1'])) {
+              if ($_GET['param1'] == 'passnotthesame') {
+                echo '
+                <div class="error-msg">
+                <i class="fa fa-times-circle"></i>
+                Les mots de passe ne correspondent pas.
+                </div>
+                ';
+                
+              }
+              else if ($_GET['param1'] == 'namepb') {
+                echo '
+                <div class="error-msg">
+                <i class="fa fa-times-circle"></i>
+                Votre nom doit contenir entre 3 et 15 caractères.
+                </div>
+                ';
+              }
+              else if ($_GET['param1'] == 'usernamepb') {
+                echo '
+                <div class="error-msg">
+                <i class="fa fa-times-circle"></i>
+                Votre prénom doit contenir entre 3 et 10 caractères.
+                </div>
+                ';
+              }
+              else if ($_GET['param1'] == 'passpb') {
+                echo '
+                <div class="error-msg">
+                <i class="fa fa-times-circle"></i>
+                Votre mot de passe doit contenir entre 5 et 15 caractères.
+                </div>
+                ';
+              }
+              else if ($_GET['param1'] == 'empty') {
+                echo '
+                <div class="error-msg">
+                <i class="fa fa-times-circle"></i>
+                 Tout les champs doivent être remplis. 
+                </div>
+                ';
+              }
+              else if ($_GET['param1'] == 'pbbdd') {
+                echo '
+                <div class="info-msg">
+                <i class="fa fa-info-circle"></i>
+                Problème de base de donnée. Veuillez réessayer plus tard...
+                </div>
+                ';
+                
+              }
+            }
+
+
+            ?>
+
             <form action="./reg_traitement.php" method="POST">
               <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
                 <p class="lead fw-normal mb-0 me-3">S'inscrire avec</p>
@@ -116,7 +174,7 @@
                 <label class="form-label" for="form3Example3">Prénom</label>
               </div>
               <div class="form-outline mb-2">
-                <input type="email" id="form3Example3" class="form-control form-control-lg" required minlength="3" maxlength="15">
+                <input type="email" id="form3Example3" name="email" class="form-control form-control-lg" required minlength="3" maxlength="15">
                 <label class="form-label" for="form3Example3">Adresse Mail</label>
               </div>
     
@@ -146,7 +204,7 @@
     
               <div class="text-center text-lg-start mt-4 pt-0">
                 <button type="submit" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">S'inscrire</button>
-                <p class="small fw-bold mt-2 pt-1 mb-0">Vous avez déja un compte? <a href="login.html" class="link-danger">Se connecter</a></p>
+                <p class="small fw-bold mt-2 pt-1 mb-0">Vous avez déja un compte? <a href="login.php" class="link-danger">Se connecter</a></p>
               </div>
     
             </form>
