@@ -80,7 +80,7 @@ img{
     font-weight: 400;
 }
 .last-price span{
-    color: #f64749;
+    color: #9f998f;
     text-decoration: line-through;
 }
 .new-price span{
@@ -103,7 +103,7 @@ img{
 .product-detail ul li{
     margin: 0;
     list-style: none;
-    background: url(https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/checked.png) left center no-repeat;
+    background: url(https://cdn2.iconfinder.com/data/icons/social-messaging-productivity-6/128/check-circle-512.png) left center no-repeat;
     background-size: 18px;
     padding-left: 1.7rem;
     margin: 0.4rem 0;
@@ -137,7 +137,7 @@ img{
     background: #256eff;
 }
 .purchase-info .btn:last-of-type{
-    background: #f64749;
+    background: #9f998f;
 }
 .purchase-info .btn:hover{
     opacity: 0.9;
