@@ -19,7 +19,7 @@
 
 
 <body class="">
-    <link rel="stylesheet" href="../css_pages/style_index.css">
+    <link rel="stylesheet" href="../css_pages/login.css">
     
     <!-- NAVBAR Section -->
       <!-- Top Bar -->
@@ -97,9 +97,51 @@
                 Votre compte a bien été crée ! Veuillez vous connecter.
                 </div>
                 ';
-                
               }
-             }
+              else if ($_GET['param1'] == "empty") {
+                echo '
+                  <div class="error-msg">
+                  <i class="fa fa-times-circle"></i>
+                  Veuillez remplir tout les champs.
+                </div>
+                  ';
+              }
+              else if ($_GET['param1'] == "password") {
+                echo '
+                  <div class="error-msg">
+                  <i class="fa fa-times-circle"></i>
+                  Le mot de passe est incorrecte.
+                </div>
+                  ';
+              }
+              else if ($_GET['param1'] == "notexist") {
+                echo '
+                  <div class="error-msg">
+                  <i class="fa fa-times-circle"></i>
+                  Aucun compte n&#x2019;est associé à cette adresse mail.
+                </div>
+                  ';
+              }
+              else if ($_GET['param1'] == "connected") {
+                echo '
+                  <div class="success-msg">
+                  <i class="fa fa-check"></i>
+                  Tu est connecté. Tu va être redirigé dans un instant...
+                </div>
+                  ';
+              }
+              echo '
+                <script>
+                setTimeout(function() {
+                    window.location.href = "index.php";  
+                }, 2000);  
+                </script>
+               ';
+
+            }
+           
+              
+             
 
 
 
@@ -125,12 +167,12 @@
               </div>
     
               <div class="form-outline mb-4">
-                <input type="email" name="email" id="form3Example3" class="form-control form-control-lg">
+                <input type="email" name="email" id="form3Example3" class="form-control form-control-lg" required>
                 <label class="form-label" for="form3Example3">Adresse Mail</label>
               </div>
     
               <div class="form-outline mb-3">
-                <input type="password" name="password" id="form3Example4" class="form-control form-control-lg">
+                <input type="password" name="password" id="form3Example4" class="form-control form-control-lg" required>
                 <label class="form-label" for="form3Example4">Mot de passe</label>
               </div>
     
