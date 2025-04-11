@@ -24,9 +24,9 @@
       <div class="w-full border-b text-gray-600 text-xs">
         <div class="max-w-7xl mx-auto px-4 flex justify-between py-2">
           <div class="flex space-x-4">
-            <a href="/pages/about.html" class="hover:underline">A propos</a>
-            <a href="#" class="hover:underline">Vie privée</a>
-            <a href="#" class="hover:underline">Contact</a>
+            <a href="about.html" class="hover:underline">A propos</a>
+            <a href="privacy.html" class="hover:underline">Vie privée</a>
+            <a href="contact.php" class="hover:underline">Contact</a>
             <a href="#" class="hover:underline">Collaborateurs</a>
           </div>
           <div class="flex space-x-4 items-center">
