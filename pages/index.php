@@ -79,25 +79,29 @@ session_start();
 <br><br>
 
 <div class="container-fluid" style="margin: 0px; padding: 0px;">
-  <div class="row g-0 align-items-center justify-content-center" style="background-color: #46413b; height: 300px;">
-    <div class="col-12 text-center">
-      <div class="text-white fw-bold back-txt">
-        <?php
+<header class="header-bg-index">
+  <div class="container px-4 px-lg-5 my-5">
+      <div class="text-center text-black">
+          <h1 class="display-4 fw-bolder">Merch-Unity</h1>
+          <p class="lead fw-normal text-black-50 mb-0">
+          <?php
 
-        if (isset($_SESSION['username'])) {
-          $username = $_SESSION['username'];
-          echo "Bienvenue {$username} !";
-        }
-        else {
-          echo "Bienvenue sur Merch-Unity ! ";
-        }
+if (isset($_SESSION['username'])) {
+  $username = $_SESSION['username'];
+  echo "Bienvenue {$username} !";
+}
+else {
+  echo "Bienvenue sur Merch-Unity ! ";
+}
 
-        ?>
-      
+?>
+          </p>
       </div>
-    </div>
   </div>
-</div>
+</header>
+
+  
+
 
 
   <br>
@@ -119,62 +123,112 @@ session_start();
     <br>
 
      <!-- Produit 1-->
-     
-    <div class="row gap-5 justify-content-center">
-      <div class="product-card col-md-4">
-        <button onclick="window.location.href='produit.html';">
-        <div class="product-img-container">
-          <div class="product-img"></div>
-        </div>
-        <div class="product-info">
-          <h2 class="product-title">Nike Shoes</h2>
-          <p class="product-description">High-quality Nike shoes for your active lifestyle.</p>
-          <p class="product-price">$129.99</p>
-          <div class="icon-container">
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-shopping-cart cart-icon"></i>
-          </div>
-        </div>
-      </div>
+     <div class="row">
+     <div class="col mb-4">
+                        <button onclick="window.location.href='produit.html';">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/images/lidl_page/router-lidl.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">AP WIFI 6</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    
+                                    55,76€
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </button>
     
 
         <!-- Produit 2-->
        
-      <div class="product-card col-md-4">
-        <button onclick="window.location.href='produit.html';">
-        <div class="product-img-container">
-          <div class="product-img"></div>
-        </div>
-        <div class="product-info">
-          <h2 class="product-title">Nike Shoes</h2>
-          <p class="product-description">High-quality Nike shoes for your active lifestyle.</p>
-          <p class="product-price">$129.99</p>
-          <div class="icon-container">
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-shopping-cart cart-icon"></i>
-          </div>
-        </div>
-      </div>
-      </button>
+        <div class="col mb-4">
+                        <button onclick="window.location.href='produit.html';">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/images/lidl_page/router-lidl.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">AP WIFI 6</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    
+                                    55,76€
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </button>
 
       <!-- Produit 3-->
       
-      <div class="product-card col-md-4">
-        <button onclick="window.location.href='produit.html';">
-        <div class="product-img-container">
-          <div class="product-img"></div>
-        </div>
-        <div class="product-info">
-          <h2 class="product-title">Nike Shoes</h2>
-          <p class="product-description">High-quality Nike shoes for your active lifestyle.</p>
-          <p class="product-price">$129.99</p>
-          <div class="icon-container">
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-shopping-cart cart-icon"></i>
-          </div>
-        </div>
-      </div>
-      </button>
+      <div class="col mb-4">
+                        <button onclick="window.location.href='produit.html';">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/images/lidl_page/router-lidl.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">AP WIFI 6</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    
+                                    55,76€
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+</div>
+    
 
     </div>
     </div>
