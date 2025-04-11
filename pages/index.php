@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -78,7 +82,18 @@
   <div class="row g-0 align-items-center justify-content-center" style="background-color: #46413b; height: 300px;">
     <div class="col-12 text-center">
       <div class="text-white fw-bold back-txt">
-        Bienvenue chez Merch-Unity !
+        <?php
+
+        if (isset($_SESSION['username'])) {
+          $username = $_SESSION['username'];
+          echo "Bienvenue {$username} !";
+        }
+        else {
+          echo "Bienvenue sur Merch-Unity ! ";
+        }
+
+        ?>
+      
       </div>
     </div>
   </div>
