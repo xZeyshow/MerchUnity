@@ -14,7 +14,9 @@ session_start();
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Futura+PT:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="../css_pages/style.css" rel="stylesheet" />
 </head>
 
 
@@ -26,7 +28,7 @@ session_start();
   <div class="w-full border-b text-gray-600 text-xs">
     <div class="max-w-7xl mx-auto px-4 flex justify-between py-2">
       <div class="flex space-x-4">
-        <a href="/pages/about.html" class="hover:underline">A propos</a>
+        <a href="about.html" class="hover:underline">A propos</a>
         <a href="#" class="hover:underline">Vie privée</a>
         <a href="#" class="hover:underline">Contact</a>
         <a href="#" class="hover:underline">Collaborateurs</a>
@@ -86,13 +88,13 @@ session_start();
           <p class="lead fw-normal text-black-50 mb-0">
           <?php
 
-if (isset($_SESSION['username'])) {
-  $username = $_SESSION['username'];
-  echo "Bienvenue {$username} !";
-}
-else {
-  echo "Bienvenue sur Merch-Unity ! ";
-}
+              if (isset($_SESSION['username'])) {
+                $username = $_SESSION['username'];
+                echo "Bienvenue {$username} !";
+              }
+              else {
+                echo "Bienvenue sur Merch-Unity ! ";
+              }
 
 ?>
           </p>
@@ -119,18 +121,16 @@ else {
     </div>
   </div>
   <br>
-  <div class="container-fluid">
+  <div class="container">
     <br>
 
-     <!-- Produit 1-->
-     <div class="row">
-     <div class="col mb-4">
+    
+     <div class="row ">
+                  <!-- Produit 1-->
+                  <div class="col mb-4">
                         <button onclick="window.location.href='produit.html';">
                         <div class="card h-100">
-                            <!-- Sale badge-->
-                            
-                            <!-- Product image-->
-                            <img class="card-img-top" src="/images/lidl_page/router-lidl.png" alt="..." />
+                            <img class="card-img-top" src="../images/lidl_page/router-lidl.png" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -159,14 +159,13 @@ else {
     
 
         <!-- Produit 2-->
-       
         <div class="col mb-4">
                         <button onclick="window.location.href='produit.html';">
                         <div class="card h-100">
                             <!-- Sale badge-->
                             
                             <!-- Product image-->
-                            <img class="card-img-top" src="/images/lidl_page/router-lidl.png" alt="..." />
+                            <img class="card-img-top" src="../images/lidl_page/router-lidl.png" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -201,7 +200,7 @@ else {
                             <!-- Sale badge-->
                             
                             <!-- Product image-->
-                            <img class="card-img-top" src="/images/lidl_page/router-lidl.png" alt="..." />
+                            <img class="card-img-top" src="../images/lidl_page/router-lidl.png" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -308,7 +307,7 @@ else {
             </div>
             <div>
               <br>
-              <a href="Hexagone.html" class="myButton">DECOUVREZ LA COLLECTION</a>
+              <a href="hexagone.html" class="myButton">DECOUVREZ LA COLLECTION</a>
             </div>
           </div>
         </div>

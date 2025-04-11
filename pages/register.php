@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Merch-Unity</title>
   <script src="https://cdn.tailwindcss.com"></script> <!-- FrameWork Tailwind -->
-  <link rel="icon" href="../images/Image2-modified.png" type="image/png">
+  <link rel="icon" href="../images/index_page/Image2-modified.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Futura+PT:wght@400;700&display=swap" rel="stylesheet">

@@ -10816,21 +10816,21 @@ textarea.form-control-lg {
 /*Modif perso*/
 
 .header-bg-lidl {
-  background-image: url('/images/lidl_page/lidl-band.jpg');
+  background-image: url('../images/lidl_page/lidl-band.jpg');
   background-position: -60% center; 
   padding: 5rem 0;
 }
 
 
 .header-bg-uppa {
-    background-image: url('/images/uppa_page/uppa.png');
+    background-image: url('../images/uppa_page/uppa.png');
     background-size: cover;
     background-position: center;
     padding: 5rem 0;
 }
 
 .header-bg-hex {
-    background-image: url('/images/hexagone_page/logo.png');
+    background-image: url('../images/hexagone_page/logo.png');
     background-size: cover;
     background-position: center;
     padding: 5rem 0;
