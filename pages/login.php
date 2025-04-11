@@ -1,5 +1,6 @@
-
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -19,7 +20,7 @@
 
 
 <body class="">
-    <link rel="stylesheet" href="../css_pages/login.css">
+ 
     
     <!-- NAVBAR Section -->
       <!-- Top Bar -->
@@ -129,14 +130,16 @@
                   Tu est connecté. Tu va être redirigé dans un instant...
                 </div>
                   ';
+                
+                  echo '
+                  <script>
+                  setTimeout(function() {
+                      window.location.href = "index.php";  
+                  }, 2000);  
+                  </script>
+                 ';
               }
-              echo '
-                <script>
-                setTimeout(function() {
-                    window.location.href = "index.php";  
-                }, 2000);  
-                </script>
-               ';
+              
 
             }
            
