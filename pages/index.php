@@ -9,7 +9,7 @@ session_start();
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Merch-Unity</title>
   <script src="https://cdn.tailwindcss.com"></script> <!-- FrameWork Tailwind -->
-  <link rel="icon" href="../images/Image2-modified.png" type="image/png">
+  <link rel="icon" href="../images/index_page/Image2-modified.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Futura+PT:wght@400;700&display=swap" rel="stylesheet">
@@ -151,7 +151,7 @@ session_start();
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ajouter au panier</a></div>
                             </div>
                         </div>
                     </div>
@@ -186,7 +186,7 @@ session_start();
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ajouter au panier</a></div>
                             </div>
                         </div>
                     </div>
@@ -213,15 +213,13 @@ session_start();
                                         <div class="bi-star-fill"></div>
                                         <div class="bi-star-fill"></div>
                                         <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    
+                                    </div> 
                                     55,76€
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ajouter au panier</a></div>
                             </div>
                         </div>
                     </div>
@@ -396,14 +394,13 @@ session_start();
           </div>
 
           <div class="col-xs-6 col-md-3">
-            <h6>Categories</h6>
-            <ul class="footer-links pt-2">
-              <li><a href="http://scanfcode.com/category/c-language/">UPPA</a></li>
-              <li><a href="http://scanfcode.com/category/front-end-development/">Hexagone</a></li>
-              <li><a href="http://scanfcode.com/category/back-end-development/">Lidl</a></li>
-              <li><a href="http://scanfcode.com/category/java-programming-language/">Vos créations</a></li>
-            </ul>
-          </div>
+          <h6>Categories</h6>
+          <ul class="footer-links pt-2">
+            <li><a href="UPPA.html">UPPA</a></li>
+            <li><a href="hexagone.html">Hexagone</a></li>
+            <li><a href="Lidl.html">Lidl</a></li>
+          </ul>
+        </div>
 
           <div class="col-xs-6 col-md-3">
             <h6>Liens rapides</h6>
