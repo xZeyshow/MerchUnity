@@ -285,3 +285,10 @@ a {
     font-weight:600
   }
 }
+
+.header-bg-index {
+  background-image: url('/images/index_page/header.png');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+}

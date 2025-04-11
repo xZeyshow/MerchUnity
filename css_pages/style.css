@@ -10830,12 +10830,11 @@ textarea.form-control-lg {
 }
 
 .header-bg-hex {
-    background-image: url('/images/hexagone_page/gouv.png');
+    background-image: url('/images/hexagone_page/logo.png');
     background-size: cover;
     background-position: center;
     padding: 5rem 0;
 }
-
 
 
 

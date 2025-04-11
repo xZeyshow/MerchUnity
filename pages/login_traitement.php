@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 #Voir si on a toutes les infos
 if (isset($_POST['email']) && isset($_POST['password'])) {
@@ -14,7 +15,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
         #Requete
-        $stmt = $pdo->prepare("SELECT password FROM user WHERE email = :email");
+        $stmt = $pdo->prepare("SELECT * FROM user WHERE email = :email");
         $stmt->bindParam(':email', $email, PDO::PARAM_STR);
         $stmt->execute();
         $user = $stmt->fetch(); #Tableau de "user"
@@ -23,6 +24,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         if ($user){
             
             if (password_verify($password, $hashedPassword)) {
+                $_SESSION['username'] = $user['username'];
                 header('Location: login.php?param1=connected');
                 exit;
 
